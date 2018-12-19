@@ -7,7 +7,7 @@ class Store:
     info_noodles_store_in_west = {
         '桃花源牛肉麵': '店名: 桃花源牛肉麵\n地址: 台南市中西區南寧街130號\n營業時段: 11:00-14:30, 17:00-21:00\n公休: 週三\n電話: 06-2130670',
         '恭仔肉燥意麵': '店名: 恭仔肉燥意麵\n地址: 台南市中西區新美街32號\n營業時段: 11:00-23:00\n公休: 無\n電話: 06-2217506',
-        '醇涎坊鍋燒意麵': '店名: 醇涎坊鍋燒意麵\n地址: 台南市中西區保安路53號\n營業時段: 06:00-22:00\n公休: \n電話: ',
+        '醇涎坊鍋燒意麵': '店名: 醇涎坊鍋燒意麵\n地址: 台南市中西區保安路53號\n營業時段: 06:00-22:00\n公休: 無\n電話: 06-2215003',
     }
 
     menu_noodles_store_in_west = {
@@ -31,12 +31,14 @@ class Store:
 # rice west
     info_rice_store_in_west = {
         'OMHUT': '店名: OMHUT\n地址: 台南市中西區萬昌街79號\n營業時段: 11:30-15:00, 17:30-20:00\n公休: 週日\n電話: 06-2215008',
-        '矮仔成': '店名: 矮仔成蝦仁飯\n地址: 台南市中西區海安路一段66號\n營業時段: 8:30-19:30\n公休: 週二\n電話: 06-2201897'
+        '矮仔成': '店名: 矮仔成蝦仁飯\n地址: 台南市中西區海安路一段66號\n營業時段: 8:30-19:30\n公休: 週二\n電話: 06-2201897',
+        '老泰羊肉': '店名: 老泰羊肉\n地址: 台南市中西區青年路206號\n營業時段: 17:00-01:00\n公休: 無\n電話: 06-2262344',
     }
 
     menu_rice_store_in_west = {
         'OMHUT': 'https://i.imgur.com/s2kL59v.jpg',
         '矮仔成': 'https://i.imgur.com/v8jBQh2.jpg',
+        '老泰羊肉': 'https://i.imgur.com/xigIAUy.jpg',
     }
 
     recommmend_rice_store_in_west = {
@@ -46,6 +48,9 @@ class Store:
         '矮仔成': {
             'disc': '台南特色美食蝦仁飯，偏濕潤的口感，火燒蝦的香氣非常撩人，缺點是價位偏高',
             'img': 'https://i.imgur.com/RrVysNV.jpg'},
+        '老泰羊肉': {
+            'disc': '好吃不帶騷味的羊肉，不需要加大量的油和薑去蓋過騷味，特別推薦羊肉炒飯',
+            'img': 'https://i.imgur.com/8YE7dlR.jpg'},
         
     }
 
@@ -78,33 +83,41 @@ class Store:
 # noodles north
     info_noodles_store_in_north = {
         '乖乖牛肉麵': '店名: 乖乖牛肉麵\n地址: 台南市北區北門路三段23號\n營業時段: 11:30-13:30, 17:00-20:00\n公休: 無\n電話: 0908-686135',
+        '明月麵店': '店名: 明月麵店\n地址: 台南市北區成功路68巷4號\n營業時段: 10:00-20:00\n公休: 無\n電話: 06-2278759',
     }
 
     menu_noodles_store_in_north = {
         '乖乖牛肉麵': 'https://i.imgur.com/qi1Vo6k.jpg',
-
+        '明月麵店': 'https://i.imgur.com/x5PJwbA.jpg',
     }
 
     recommmend_noodles_store_in_north = {
         '乖乖牛肉麵': {
             'disc': '高CP值的牛肉麵，麵多肉多又好吃，大食量的人一定可以獲得飽足感',
-            'img': 'https://i.imgur.com/oSOSsch.jpg'
-        }
+            'img': 'https://i.imgur.com/oSOSsch.jpg'},
+        '明月麵店': {
+            'disc': '特別隱匿的麵攤，麻醬麵加肉燥香而不油膩，不喜歡麻醬的人可以不要加',
+            'img': 'https://i.imgur.com/SmQV18H.jpg'},
     }
 
 # rice north
     info_rice_store_in_north = {
         '不餓門廣東粥': '店名: 不餓門廣東粥\n地址: 台南市北區文賢路162號\n營業時段: 11:00-14:00, 17:00-20:00\n公休: 週三\n電話: 06-3585468',
+        '開元路無名虱目魚': '店名: 開元路無名虱目魚 ‧ 肉燥飯\n地址: 台南市北區開元路313號\n營業時段: 05:20-13:30\n公休: 無\n電話: 06-2363646',
     }
 
     menu_rice_store_in_north = {
         '不餓門廣東粥': 'https://i.imgur.com/0KYJff1.jpg',
+        '開元路無名虱目魚': 'https://i.imgur.com/6AfVis4.jpg',
     }
 
     recommmend_rice_store_in_north = {
         '不餓門廣東粥': {
             'disc': '粥品很有味道，是重口味的粥，比粥更令人印象深刻的是炒飯，尤其蝦仁炒飯，非常推薦',
             'img': 'https://i.imgur.com/ArOhPSi.jpg'},
+        '開元路無名虱目魚': {
+            'disc': '台南在地人的早餐，肉燥飯肥嫩入口即化，魚皮湯很特別是魚漿製成',
+            'img': 'https://i.imgur.com/PAXCa2k.jpg'},
 
     }
 
