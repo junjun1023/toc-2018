@@ -173,7 +173,7 @@ class TocMachine(GraphMachine):
         send_image_url(sender_id, Store.menu_rice_store_in_north.get(key))
         send_button_message(sender_id, "你覺得要重選嗎？", SAT_BUTTON)
 
-    def on_exit_eat_rice_in_north(self):
+    def on_exit_eat_rice_in_north(self, event):
         print('Leaving eat rice in north')
 
     def on_enter_recommend_rice_in_north(self, event):
@@ -239,7 +239,7 @@ class TocMachine(GraphMachine):
         send_image_url(sender_id, Store.menu_noodles_store_in_north.get(key))
         send_button_message(sender_id, "你要重選嗎？", SAT_BUTTON)
 
-    def on_exit_eat_noodles_in_north(self):
+    def on_exit_eat_noodles_in_north(self, event):
         print('Leaving eat noodles in north')
 
     def on_enter_recommend_noodles_in_north(self, event):
@@ -281,7 +281,7 @@ class TocMachine(GraphMachine):
         
         #self.go_back()
 
-    def on_exit_eat_rice_in_west(self):
+    def on_exit_eat_rice_in_west(self, event):
         print('Leaving eat rice in west')
 
     def on_enter_recommend_rice_in_west(self, event):
@@ -347,7 +347,7 @@ class TocMachine(GraphMachine):
         send_image_url(sender_id, Store.menu_noodles_store_in_west.get(key))
         send_button_message(sender_id, "你要重選嗎？", SAT_BUTTON)
 
-    def on_exit_eat_noodles_in_west(self):
+    def on_exit_eat_noodles_in_west(self, event):
         print('Leaving eat noodles in west')
 
     def on_enter_recommend_noodles_in_west(self, event):
