@@ -248,7 +248,7 @@ class TocMachine(GraphMachine):
         send_image_url(sender_id, Store.recommmend_noodles_store_in_north[key]['img'])
         send_button_message(sender_id, "祝你用餐愉快囉～", BYE_BUTTON)
 
-    def on_exit_recommend_noodles_in_north(self):
+    def on_exit_recommend_noodles_in_north(self, event):
         print("Leaving recommend noodles in north")
 
 # rice west
@@ -356,7 +356,7 @@ class TocMachine(GraphMachine):
         send_image_url(sender_id, Store.recommmend_noodles_store_in_west[key]['img'])
         send_button_message(sender_id, "祝你用餐愉快囉～", BYE_BUTTON)
 
-    def on_exit_recommend_noodles_in_west(self):
+    def on_exit_recommend_noodles_in_west(self, event):
         print("Leaving recommend noodles in west")
 
 # rice east
@@ -464,7 +464,7 @@ class TocMachine(GraphMachine):
         send_image_url(sender_id, Store.recommmend_noodles_store_in_east[key]['img'])
         send_button_message(sender_id, "祝你用餐愉快囉～", BYE_BUTTON)
 
-    def on_exit_recommend_noodles_in_east(self):
+    def on_exit_recommend_noodles_in_east(self, event):
         print("Leaving recommend noodles in east")
     
     
