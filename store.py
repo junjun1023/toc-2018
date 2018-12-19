@@ -6,17 +6,26 @@ class Store:
 # noodles west
     info_noodles_store_in_west = {
         '桃花源牛肉麵': '店名: 桃花源牛肉麵\n地址: 台南市中西區南寧街130號\n營業時段: 11:00-14:30, 17:00-21:00\n公休: 週三\n電話: 06-2130670',
-
+        '恭仔肉燥意麵': '店名: 恭仔肉燥意麵\n地址: 台南市中西區新美街32號\n營業時段: 11:00-23:00\n公休: 無\n電話: 06-2217506',
+        '醇涎坊鍋燒意麵': '店名: 醇涎坊鍋燒意麵\n地址: 台南市中西區保安路53號\n營業時段: 06:00-22:00\n公休: \n電話: ',
     }
 
     menu_noodles_store_in_west = {
         '桃花源牛肉麵': 'https://i.imgur.com/849vHSx.jpg',
+        '恭仔肉燥意麵': 'https://i.imgur.com/h8ETjuT.jpg',
+        '醇涎坊鍋燒意麵': 'https://i.imgur.com/NGl01N5.jpg',
     }
 
     recommmend_noodles_store_in_west = {
         '桃花源牛肉麵': {
             'disc': '牛肉麵的湯頭溫醇，除了牛肉的香氣外，還有蔬菜的淡雅',
             'img': 'https://i.imgur.com/YeCTINP.jpg'},
+        '恭仔肉燥意麵': {
+            'disc': '台南有名的意麵店之一，意麵的特點在於有加蒜泥，口味辛香，此外水餃也非常推薦，尤其是蝦餃，包了2隻蝦呢！',
+            'img': 'https://i.imgur.com/2EPNNIp.jpg'}, 
+        '醇涎坊鍋燒意麵': {
+            'disc': '台南鍋燒意麵百百家中有名的一家，湯頭帶溫厚的油炸物香，但是又不會太油膩，炸魚餅很好吃',
+            'img': 'https://i.imgur.com/PRJXmBm.jpg'},
     }
 
 # rice west
@@ -168,15 +177,15 @@ class Store:
 
 # snack east
     info_snack_store_in_east = {
-        '鳳凰來手作炸雞屋': '店名: 冰ㄉ• かき氷\n地址: 台南市東區崇善路155號\n營業時段: 11:00-20:00\n公休: 無\n電話: 0974-027042'
+        '木子家八寶冰': '店名: 木子家八寶冰\n地址: 台南市東區大同路一段187號\n營業時段: 11:00-22:00\n公休: 無\n電話: 06-2159068'
     }
 
     menu_snack_store_in_east = {
-        '冰ㄉ': 'https://i.imgur.com/H6OIegv.jpg',
+        '木子家八寶冰': 'https://i.imgur.com/BTVXipJ.jpg',
     }
 
     recommmend_snack_store_in_east = {
-        '冰ㄉ': {
-            'disc': '平價的日式冰店，可以花小錢買個涼快',
-            'img': ''},
+        '木子家八寶冰': {
+            'disc': '八寶冰淋上黑糖水，夏天吃很過癮，冬天供應的草莓牛奶冰也很平價好吃呢',
+            'img': 'https://i.imgur.com/pLJnK8V.jpg'},
     }
