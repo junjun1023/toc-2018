@@ -8,12 +8,14 @@ class Store:
         '桃花源牛肉麵': '店名: 桃花源牛肉麵\n地址: 台南市中西區南寧街130號\n營業時段: 11:00-14:30, 17:00-21:00\n公休: 週三\n電話: 06-2130670',
         '恭仔肉燥意麵': '店名: 恭仔肉燥意麵\n地址: 台南市中西區新美街32號\n營業時段: 11:00-23:00\n公休: 無\n電話: 06-2217506',
         '醇涎坊鍋燒意麵': '店名: 醇涎坊鍋燒意麵\n地址: 台南市中西區保安路53號\n營業時段: 06:00-22:00\n公休: 無\n電話: 06-2215003',
+        '小丰川': '店名: 小丰川\n地址: 台南市中西區國華街三段261號\n營業時段: 12:00-20:00\n公休: 週 日.一\n電話: 無',
     }
 
     menu_noodles_store_in_west = {
         '桃花源牛肉麵': 'https://i.imgur.com/849vHSx.jpg',
         '恭仔肉燥意麵': 'https://i.imgur.com/h8ETjuT.jpg',
         '醇涎坊鍋燒意麵': 'https://i.imgur.com/NGl01N5.jpg',
+        '小丰川': 'https://i.imgur.com/x5PJwbA.jpg',
     }
 
     recommmend_noodles_store_in_west = {
@@ -26,6 +28,9 @@ class Store:
         '醇涎坊鍋燒意麵': {
             'disc': '台南鍋燒意麵百百家中有名的一家，湯頭帶溫厚的油炸物香，但是又不會太油膩，炸魚餅很好吃',
             'img': 'https://i.imgur.com/PRJXmBm.jpg'},
+        '小丰川': {
+            'disc': '有種懷舊感的麵店，麵條口感有厚度有彈性，加肉燥的麻醬麵很好吃',
+            'img': 'https://i.imgur.com/pHFt7gE.jpg'},
     }
 
 # rice west
@@ -33,12 +38,14 @@ class Store:
         'OMHUT': '店名: OMHUT\n地址: 台南市中西區萬昌街79號\n營業時段: 11:30-15:00, 17:30-20:00\n公休: 週日\n電話: 06-2215008',
         '矮仔成': '店名: 矮仔成蝦仁飯\n地址: 台南市中西區海安路一段66號\n營業時段: 8:30-19:30\n公休: 週二\n電話: 06-2201897',
         '老泰羊肉': '店名: 老泰羊肉\n地址: 台南市中西區青年路206號\n營業時段: 17:00-01:00\n公休: 無\n電話: 06-2262344',
+        '橫町丼屋': '店名: 橫町丼屋\n地址: 台南市中西區樹林街二段16號\n營業時段: 11:30-14:00, 17:00-21:00\n公休: 週一\n電話: 06-2141908',
     }
 
     menu_rice_store_in_west = {
         'OMHUT': 'https://i.imgur.com/s2kL59v.jpg',
         '矮仔成': 'https://i.imgur.com/v8jBQh2.jpg',
         '老泰羊肉': 'https://i.imgur.com/xigIAUy.jpg',
+        '橫町丼屋': 'https://i.imgur.com/M58FSJ1.jpg',
     }
 
     recommmend_rice_store_in_west = {
@@ -51,7 +58,9 @@ class Store:
         '老泰羊肉': {
             'disc': '好吃不帶騷味的羊肉，不需要加大量的油和薑去蓋過騷味，特別推薦羊肉炒飯',
             'img': 'https://i.imgur.com/8YE7dlR.jpg'},
-        
+        '橫町丼屋': {
+            'disc': '相對平價的日式丼飯，精緻好吃，份量上以男性而言可能稍嫌不足',
+            'img': 'https://i.imgur.com/F0H3V90.jpg'},
     }
 
 # snack west
@@ -59,12 +68,14 @@ class Store:
         '康宇家': '店名: 康宇家手作抹茶甜點\n地址: 台南市中西區國華街三段26號D1\n營業時段: 11:00-21:00\n公休: 週四\n電話: 0927-399886',
         '甜在心': '店名: 元紅豆餅\n地址: 台南市中西區南華街81號\n營業時段: 11:00-17:00\n公休: 週一\n電話: 0921-023020',
         '冰鄉': '店名: 冰鄉\n地址: 台南市中西區民生路一段160號\n營業時段: 12:00-21:00\n公休: 無\n電話: 06-2234427',
+        '幸の町': '店名: 幸の町 雪花冰專賣店\n地址: 台南市中西區海安路二段48號\n營業時段: 13:30-22:00\n公休: 無\n電話: 06-2227185',
     }
 
     menu_snack_store_in_west = {
         '康宇家': 'https://i.imgur.com/ndjYNOF.jpg',
         '甜在心': 'https://i.imgur.com/jz2ilka.jpg',
         '冰鄉': 'https://i.imgur.com/4kAqbhO.jpg',
+        '幸の町': 'https://i.imgur.com/hFulis8.jpg',
     }
 
     recommmend_snack_store_in_west = {
@@ -76,8 +87,10 @@ class Store:
             'img': 'https://i.imgur.com/udzCl40.jpg'},
         '冰鄉': {
             'disc': '台南出名的冰店，給料大方，尤其夏季芒果冰，秋季荔枝冰，冬季草莓冰，除了觀光客，也緊抓不少在地人的心',
-            'img': 'https://i.imgur.com/9L8IIrp.jpg',
-        }
+            'img': 'https://i.imgur.com/9L8IIrp.jpg'},
+        '幸の町': {
+            'disc': '漂亮日式感的冰店，冰品走精緻路線很好拍照，不過口味偏甜',
+            'img': 'https://i.imgur.com/MsvVJsL.jpg'},
     }
 
 # noodles north
@@ -88,7 +101,7 @@ class Store:
 
     menu_noodles_store_in_north = {
         '乖乖牛肉麵': 'https://i.imgur.com/qi1Vo6k.jpg',
-        '明月麵店': 'https://i.imgur.com/x5PJwbA.jpg',
+        '明月麵店': 'https://i.imgur.com/w7a1uK6.jpg',
     }
 
     recommmend_noodles_store_in_north = {
@@ -119,6 +132,26 @@ class Store:
             'disc': '台南在地人的早餐，肉燥飯肥嫩入口即化，魚皮湯很特別是魚漿製成',
             'img': 'https://i.imgur.com/PAXCa2k.jpg'},
 
+    }
+
+# snack north
+    info_snack_store_in_north = {
+        '冰仔角': '店名: 冰仔角\n地址: 台南市北區北園街87巷34號\n營業時段: 13:00-19:00\n公休: 週日\n電話: 06-2380699',
+        '阿堯師': '店名: 老正牌 • 阿堯師雞蛋糕\n地址: 台南市北區文賢路522號\n營業時段: 13:00-22:00\n(週日: 14:30-20:30)\n公休: 無\n電話: 06-3500820',
+    }
+
+    menu_snack_store_in_north = {
+        '冰仔角': 'https://i.imgur.com/NZENM8P.jpg',
+        '阿堯師': 'https://i.imgur.com/USbNKb0.jpg'
+    }
+
+    recommmend_snack_store_in_north = {
+        '冰仔角': {
+            'disc': '隱匿但人潮很多的冰店，冰品高CP值，招牌番茄蜜餞牛奶冰非常好吃',
+            'img': 'https://i.imgur.com/tqrR48u.jpg'},
+        '阿堯師': {
+            'disc': '在地台南人一定不陌生的小點心，雞蛋糕帶蜂蜜香氣，口感鬆軟，非常推薦！',
+            'img': 'https://i.imgur.com/rqWZBtD.jpg'},
     }
 
 # rice east
