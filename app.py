@@ -2,6 +2,9 @@ from bottle import route, run, request, abort, static_file
 import pygraphviz
 from fsm import TocMachine
 from utils import *
+import os
+
+PORT = os.environ['PORT']
 
 VERIFY_TOKEN = "eatandcomment"
 machine = TocMachine(
@@ -319,4 +322,4 @@ def show_fsm():
 
 
 if __name__ == "__main__":
-    run(host="localhost", port=5000, debug=True, reloader=True)
+    run(host="0.0.0.0", port=PORT, debug=True, reloader=True)
