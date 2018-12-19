@@ -206,11 +206,24 @@ class TocMachine(GraphMachine):
         print("I'm want to eat snack in north")
 
         sender_id = event['sender']['id']
-        response = send_text_message(sender_id, "尚未新增小點心到北區資料庫喔！")
-        #self.go_back()
+        send_text_message(sender_id, "為你推薦北區的點心：")
+        global key
+        key = random.choice(list(Store.info_snack_store_in_north))
+        send_text_message(sender_id, Store.info_snack_store_in_north.get(key))
+        send_image_url(sender_id, Store.menu_snack_store_in_north.get(key))
+        send_button_message(sender_id, "你覺得要重選嗎？", SAT_BUTTON)
 
-    def on_exit_eat_snack_in_north(self):
+    def on_exit_eat_snack_in_north(self, event):
         print('Leaving eat snack in north')
+
+    def on_enter_recommend_snack_in_north(self, event):
+        sender_id = event['sender']['id']
+        send_text_message(sender_id, Store.recommmend_snack_store_in_north[key]['disc'])
+        send_image_url(sender_id, Store.recommmend_snack_store_in_north[key]['img'])
+        send_button_message(sender_id, "祝你用餐愉快囉～", BYE_BUTTON)
+
+    def on_exit_recommend_snack_in_north(self, event):
+        print("Leaving recommend snack in north")
 # noodles north
     def is_going_to_eat_noodles_in_north(self, event):
         if self.state == 'eat_noodles':
@@ -314,11 +327,24 @@ class TocMachine(GraphMachine):
         print("I'm want to eat snack in west")
 
         sender_id = event['sender']['id']
-        response = send_text_message(sender_id, "中西區點心的資訊還未新增喔！")
-        #self.go_back()
+        send_text_message(sender_id, "為你推薦中西區的點心：")
+        global key
+        key = random.choice(list(Store.info_snack_store_in_west))
+        send_text_message(sender_id, Store.info_snack_store_in_west.get(key))
+        send_image_url(sender_id, Store.menu_snack_store_in_west.get(key))
+        send_button_message(sender_id, "你覺得要重選嗎？", SAT_BUTTON)
 
-    def on_exit_eat_snack_in_west(self):
+    def on_exit_eat_snack_in_west(self, event):
         print('Leaving eat snack in west')
+
+    def on_enter_recommend_snack_in_west(self, event):
+        sender_id = event['sender']['id']
+        send_text_message(sender_id, Store.recommmend_snack_store_in_west[key]['disc'])
+        send_image_url(sender_id, Store.recommmend_snack_store_in_west[key]['img'])
+        send_button_message(sender_id, "祝你用餐愉快囉～", BYE_BUTTON)
+
+    def on_exit_recommend_snack_in_west(self, event):
+        print("Leaving recommend snack in west")
 # noodles west
     def is_going_to_eat_noodles_in_west(self, event):
         if self.state == 'eat_noodles':
@@ -419,13 +445,25 @@ class TocMachine(GraphMachine):
 
     def on_enter_eat_snack_in_east(self, event):
         print("I'm want to eat snack")
-
         sender_id = event['sender']['id']
         responese = send_text_message(sender_id, "為你推薦東區的點心：")
-        #self.go_back()
+        global key
+        key = random.choice(list(Store.info_snack_store_in_east))
+        send_text_message(sender_id, Store.info_snack_store_in_east.get(key))
+        send_image_url(sender_id, Store.menu_snack_store_in_east.get(key))
+        send_button_message(sender_id, "你要重選嗎？", SAT_BUTTON)
 
-    def on_exit_eat_snack_in_east(self):
+    def on_exit_eat_snack_in_east(self, event):
         print('Leaving eat snack')
+
+    def on_enter_recommend_snack_in_east(self, event):
+        sender_id = event['sender']['id']
+        send_text_message(sender_id, Store.recommmend_snack_store_in_east[key]['disc'])
+        send_image_url(sender_id, Store.recommmend_snack_store_in_east[key]['img'])
+        send_button_message(sender_id, "祝你用餐愉快囉～", BYE_BUTTON)
+
+    def on_exit_recommend_snack_in_east(self, event):
+        print("Leaving recommend snack in east")
 # noodles east
     def is_going_to_eat_noodles_in_east(self, event):
         if self.state == 'eat_noodles':
