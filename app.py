@@ -314,10 +314,12 @@ def webhook_handler():
     if body['object'] == "page":
         event = body['entry'][0]['messaging'][0]
         print(event)
-        if 'text' in event['message'] or event.get('postback'):
-            print("yayayay")
-            
+        if event.get('postback'):
             machine.advance(event)
+        elif 'text' in event['message']:
+            print("yayayay")
+            machine.advance(event)
+
         if machine.state == 'home':
             sender_id = event['sender']['id']
             send_text_message(sender_id, "隨便吃嗎？\n我來幫你決定吃什麼吧！\n點擊以下按鈕\n你也可以手動輸入！")
