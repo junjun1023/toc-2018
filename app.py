@@ -310,7 +310,6 @@ def webhook_handler():
     print('\nFSM STATE: ' + machine.state)
     print('REQUEST BODY: ')
     print(body)
-    show_fsm()
 
     if body['object'] == "page":
         event = body['entry'][0]['messaging'][0]
