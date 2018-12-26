@@ -34,9 +34,16 @@ machine = TocMachine(
         'recommend_noodles_in_west',
         'recommend_rice_in_north',
         'recommend_snack_in_north',
-        'recommend_noodles_in_north'
+        'recommend_noodles_in_north',
+        'help'
     ],
     transitions=[
+        {
+            'trigger': 'advance',
+            'source': 'home',
+            'dest': 'help',
+            'conditions': 'is_going_to_help'
+        },
         {
             'trigger': 'advance',
             'source': 'home',
@@ -270,7 +277,9 @@ machine = TocMachine(
         },
         {
             'trigger': 'go_back',
-            'source': 'temp_home',
+            'source': [
+                'temp_home',
+                'help'],
             'dest': 'home'
         }
         
