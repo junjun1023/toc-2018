@@ -14,7 +14,7 @@ class TocMachine(GraphMachine):
     def is_going_to_help(self, event):
         if event.get("message"):
             text = event['message']['text']
-            return text == "\\help"
+            return text == "\/help"
         return False
 
     def on_enter_help(self, event):
