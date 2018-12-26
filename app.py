@@ -314,9 +314,9 @@ def webhook_handler():
     if body['object'] == "page":
         event = body['entry'][0]['messaging'][0]
         print(event)
-        if event.get('text') or event.get('postback'):
+        if 'text' in event['message'] or event.get('postback'):
             print("yayayay")
-            print(event['message']['text'])
+            
             machine.advance(event)
         if machine.state == 'home':
             sender_id = event['sender']['id']
