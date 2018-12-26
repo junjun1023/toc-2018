@@ -20,7 +20,7 @@ class TocMachine(GraphMachine):
     def on_enter_help(self, event):
         sender_id = event['sender']['id']
         response = send_text_message(sender_id, "這是一個幫你決定要吃什麼的機器人～")
-        
+        self.go_back()
 
     def on_exit_help(self, event):
         print('Leaving help state')
