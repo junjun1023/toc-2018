@@ -14,7 +14,6 @@ class TocMachine(GraphMachine):
     def is_going_to_help(self, event):
         if event.get("message"):
             text = event['message']['text']
-            print("help state")
             return text.lower() == 'help'
         return False
 
